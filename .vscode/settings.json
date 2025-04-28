@@ -1,0 +1,15 @@
+{
+    "rust-analyzer.cargo.target": "x86_64-unknown-linux-gnu",
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+    "rust.target": "x86_64-unknown-linux-gnu",
+    "rust.all_features": true,
+    "rust-analyzer.server.extraEnv": {
+        "CARGO_TARGET_DIR": "target"
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/codespace/.cargo/bin:${env:PATH}"
+    },
+    "rust-analyzer.server.path": "/home/codespace/.cargo/bin/cargo"
+}

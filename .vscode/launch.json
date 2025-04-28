@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug fighter",
+            "program": "${workspaceFolder}/fighter/target/debug/fighter",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=fighter",
+                    "--package=fighter"
+                ],
+                "filter": {
+                    "name": "fighter",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/fighter",
+            "env": {
+                "PATH": "/home/codespace/.cargo/bin:${env:PATH}"
+            },
+            "sourceMap": {
+                "/rustc/*": "${env:HOME}/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust"
+            }
+        }
+    ]
+}
